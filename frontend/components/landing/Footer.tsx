@@ -18,7 +18,7 @@ export default function Footer() {
                             <div className="bg-blue-600 p-1.5 rounded-lg">
                                 <ShieldCheck size={24} />
                             </div>
-                            <span className="text-xl font-bold">FORMAPP</span>
+                            <span className="text-xl font-bold">DoSkils</span>
                         </div>
                         <p className="text-sm leading-relaxed text-gray-400">
                             Transformamos la gestión de cumplimiento y auditoría con tecnología inteligente. Simplificamos tus procesos para que siempre estés listo ante cualquier inspección.
@@ -63,7 +63,7 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail size={18} className="text-blue-500 shrink-0" />
-                                <span>contacto@formapp.pe</span>
+                                <span>contacto@DoSkils.pe</span>
                             </li>
                         </ul>
                     </div>
@@ -71,9 +71,9 @@ export default function Footer() {
 
                 {/* barra inferior */}
                 <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-                    <p>© {currentYear} FORMAPP. Todos los derechos reservados.</p>
+                    <p>© {currentYear} DoSkils. Todos los derechos reservados.</p>
                     <div className="flex gap-6">
-                        <span>Desarrollado con ❤️ por el equipo de FORMAPP</span>
+                        <span>Desarrollado con ❤️ por el equipo de DoSkils</span>
                     </div>
                 </div>
             </div>

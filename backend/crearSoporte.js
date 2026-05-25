@@ -13,12 +13,12 @@ async function main() {
 
   // 2. Creamos el usuario en la BD
   const nuevoSoporte = await prisma.usuarios.upsert({
-    where: { usuario: "soporte_formapp" },
+    where: { usuario: "soporte_DoSkils" },
     update: {}, // Si ya existe, no hace nada
     create: {
-      nombre: "Soporte FormApp",
-      usuario: "soporte_formapp",
-      email: "soporte@formapp.com", // Puedes cambiarlo
+      nombre: "Soporte DoSkils",
+      usuario: "soporte_DoSkils",
+      email: "soporte@DoSkils.com", // Puedes cambiarlo
       contrasena: hashContrasena,
       rol: "SOPORTE",
       estado: true,
