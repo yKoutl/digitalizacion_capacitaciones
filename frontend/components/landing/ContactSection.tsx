@@ -97,7 +97,7 @@ export default function ContactSection() {
                                     </div>
                                     <div>
                                         <p className="text-xs text-slate-400 dark:text-gray-500 uppercase tracking-wider font-semibold mb-1">Escríbenos</p>
-                                        <p className="text-white font-medium hover:text-emerald-400 transition-colors cursor-pointer">contacto@formapp.pe</p>
+                                        <p className="text-white font-medium hover:text-emerald-400 transition-colors cursor-pointer">contacto@DoSkils.pe</p>
                                     </div>
                                 </div>
                             </div>

@@ -61,7 +61,7 @@ export default function Navbar() {
                             <ShieldCheck size={28} />
                         </div>
                         <span className={`text-2xl font-bold transition-colors ${logoTextClass}`}>
-                            FORMAPP
+                            DoSkils
                         </span>
                     </Link>
 

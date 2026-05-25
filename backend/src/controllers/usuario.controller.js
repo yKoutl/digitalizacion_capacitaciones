@@ -180,7 +180,7 @@ const registrarUsuario = async (req, res) => {
 
     const loginUrl = `${process.env.FRONTEND_URL || "http://localhost:3000"}/login`;
     const html = `
-      <h1>Bienvenido a FormApp, ${nombreFinal}</h1>
+      <h1>Bienvenido a DoSkils, ${nombreFinal}</h1>
       <p>Se ha creado una cuenta para ti en el sistema de capacitaciones.</p>
       <p><strong>Usuario:</strong> ${usuario}</p>
       <p><strong>Contraseña Temporal:</strong> ${passOriginal}</p>
@@ -190,7 +190,7 @@ const registrarUsuario = async (req, res) => {
 
     await sendEmailManual(
       email,
-      "Bienvenido a FormApp - Tus credenciales",
+      "Bienvenido a DoSkils - Tus credenciales",
       html,
     );
 

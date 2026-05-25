@@ -12,11 +12,11 @@ import BotNotification from './BotNotification';
 import FloatingButton from './FloatingButton';
 import api from '@/services/api';
 
-const botImage = '/Planet_bot_Formapp.png';
+const botImage = '/Planet_bot_DoSkills.png';
 
-const FORMAPP_TIPS: string[] = [
+const DoSkills_TIPS: string[] = [
     "💡 ¿Sabías que? Digitalizar tus capacitaciones ahorra un 70% en costos logísticos.",
-    "🚀 ¡Formapp permite crear formularios inteligentes en segundos!",
+    "🚀 ¡DoSkils permite crear formularios inteligentes en segundos!",
     "📱 Tus colaboradores pueden completar sus capacitaciones desde cualquier dispositivo.",
     "📊 Obtén reportes en tiempo real sobre el progreso de tu equipo.",
     "🔒 La seguridad de tus datos es nuestra prioridad número uno.",
@@ -93,7 +93,7 @@ const PlanetBot: React.FC<PlanetBotProps> = ({ currentView: propView }) => {
     const [messages, setMessages] = useState<Message[]>([
         {
             id: 1,
-            text: "¡Hola! Soy Planet Bot 🤖 de Formapp. Estoy aquí para ayudarte a digitalizar y optimizar tus capacitaciones. ¿En qué puedo apoyarte hoy?",
+            text: "¡Hola! Soy Planet Bot 🤖 de DoSkills. Estoy aquí para ayudarte a digitalizar y optimizar tus capacitaciones. ¿En qué puedo apoyarte hoy?",
             sender: 'bot',
             timestamp: new Date()
         }
@@ -119,13 +119,13 @@ const PlanetBot: React.FC<PlanetBotProps> = ({ currentView: propView }) => {
 
 
         if (currentView === 'login') {
-            setNotification("🔒 Panel de acceso seguro para administradores de Formapp.");
+            setNotification("🔒 Panel de acceso seguro para administradores de DoSkills.");
             return;
         }
 
         const intervalId = setInterval(() => {
             if (!isOpen && !notification && currentView === 'landing') {
-                const randomTip = FORMAPP_TIPS[Math.floor(Math.random() * FORMAPP_TIPS.length)];
+                const randomTip = DoSkills_TIPS[Math.floor(Math.random() * DoSkills_TIPS.length)];
                 setNotification(randomTip);
 
                 setTimeout(() => {
@@ -188,14 +188,14 @@ const PlanetBot: React.FC<PlanetBotProps> = ({ currentView: propView }) => {
             const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
             const systemPrompt = `
-                Eres Planet Bot, el asistente inteligente de Formapp.
-                CONTEXTO DE FORMAPP:
-                - Formapp es una plataforma SaaS diseñada para la digitalización de capacitaciones y formularios corporativos.
+                Eres Planet Bot, el asistente inteligente de DoSkills.
+                CONTEXTO DE DoSkills:
+                - DoSkills es una plataforma SaaS diseñada para la digitalización de capacitaciones y formularios corporativos.
                 - Nuestra meta es eliminar el uso de papel y optimizar la recolección de datos en tiempo real.
                 - Ofrecemos: Creación de formularios, seguimiento de progreso, reportes automáticos y acceso multi-dispositivo.
                 
                 TU ROL:
-                - Responder dudas sobre cómo usar Formapp, sus beneficios y características técnicas.
+                - Responder dudas sobre cómo usar DoSkills, sus beneficios y características técnicas.
                 - Ser profesional, innovador y usar emojis relacionados con tecnología (🚀, 📊, 📱).
                 - Mantener un tono servicial enfocado en la eficiencia operativa.
                 - Respuestas concisas y directas (max 3 oraciones).
@@ -209,7 +209,7 @@ const PlanetBot: React.FC<PlanetBotProps> = ({ currentView: propView }) => {
                     },
                     {
                         role: "model",
-                        parts: [{ text: "¡Hola! Soy Planet Bot 🤖 de Formapp. Estoy listo para ayudarte con la digitalización de tus capacitaciones. ¿Qué deseas saber?" }],
+                        parts: [{ text: "¡Hola! Soy Planet Bot 🤖 de DoSkills. Estoy listo para ayudarte con la digitalización de tus capacitaciones. ¿Qué deseas saber?" }],
                     },
                     ...messages.slice(1).map(m => ({
                         role: m.sender === 'user' ? 'user' : 'model',
@@ -234,7 +234,7 @@ const PlanetBot: React.FC<PlanetBotProps> = ({ currentView: propView }) => {
             console.error("Gemini Error:", error);
             const errorMsg: Message = {
                 id: Date.now() + 1,
-                text: "Lo siento, tuve un problema al conectarme con la central de Formapp.",
+                text: "Lo siento, tuve un problema al conectarme con la central de DoSkills.",
                 sender: 'bot',
                 timestamp: new Date()
             };

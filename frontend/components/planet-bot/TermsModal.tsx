@@ -35,27 +35,27 @@ const TermsModal: React.FC<TermsModalProps> = ({ onClose, type = 'web' }) => {
     // configuración de contenido
     const config: Config = isBot ? {
         titleHeader: "TÉRMINOS DE SERVICIO PLANET BOT",
-        subHeader: "ASISTENTE INTELIGENTE - FORMAPP",
+        subHeader: "ASISTENTE INTELIGENTE - DoSkills",
         fileName: "Terminos_PlanetBot_Formapp.pdf",
         docCode: "DOC-FOR-2026",
-        intro: "Este documento establece las condiciones de uso del asistente virtual Planet Bot dentro de la plataforma Formapp. Al interactuar con el bot, usted acepta estas condiciones.",
+        intro: "Este documento establece las condiciones de uso del asistente virtual Planet Bot dentro de la plataforma DoSkills. Al interactuar con el bot, usted acepta estas condiciones.",
         sections: [
-            { title: "1. PROPÓSITO DEL ASISTENTE", icon: Bot, body: "Planet Bot es una herramienta diseñada para brindar soporte y orientación sobre la plataforma Formapp y la digitalización de capacitación corporativa." },
-            { title: "2. INTERACCIÓN Y USO", icon: CheckCircle, body: "El usuario se compromete a realizar consultas relacionadas con la eficiencia operativa y el uso de Formapp. Nos reservamos el derecho de limitar el acceso ante usos indebidos." },
+            { title: "1. PROPÓSITO DEL ASISTENTE", icon: Bot, body: "Planet Bot es una herramienta diseñada para brindar soporte y orientación sobre la plataforma DoSkills y la digitalización de capacitación corporativa." },
+            { title: "2. INTERACCIÓN Y USO", icon: CheckCircle, body: "El usuario se compromete a realizar consultas relacionadas con la eficiencia operativa y el uso de DoSkills. Nos reservamos el derecho de limitar el acceso ante usos indebidos." },
             { title: "3. LIMITACIÓN DE IA", icon: Scale, body: "Las respuestas son generadas por IA y pueden contener imprecisiones técnicas. Verifique siempre los procesos críticos en su panel de administración." },
-            { title: "4. PRIVACIDAD Y DATOS", icon: Shield, body: "Las conversaciones se procesan para optimizar el soporte. Formapp garantiza la confidencialidad de la información corporativa y académica compartida." }
+            { title: "4. PRIVACIDAD Y DATOS", icon: Shield, body: "Las conversaciones se procesan para optimizar el soporte. DoSkills garantiza la confidencialidad de la información corporativa y académica compartida." }
         ]
     } : {
         titleHeader: "TÉRMINOS Y POLÍTICAS WEB",
-        subHeader: "SITIO WEB OFICIAL - FORMAPP",
+        subHeader: "SITIO WEB OFICIAL - DoSkills",
         fileName: "Legal_Web_Formapp.pdf",
         docCode: "DOC-WEB-2026",
-        intro: "Bienvenido a la plataforma digital de Formapp. A continuación se detallan los términos legales que rigen el uso de este sitio web y herramientas digitales.",
+        intro: "Bienvenido a la plataforma digital de DoSkills. A continuación se detallan los términos legales que rigen el uso de este sitio web y herramientas digitales.",
         sections: [
-            { title: "1. TÉRMINOS GENERALES", icon: Scale, body: "El acceso a Formapp implica la aceptación plena de estas condiciones. El contenido es propiedad intelectual de la empresa y está protegido por normativas internacionales." },
+            { title: "1. TÉRMINOS GENERALES", icon: Scale, body: "El acceso a DoSkills implica la aceptación plena de estas condiciones. El contenido es propiedad intelectual de la empresa y está protegido por normativas internacionales." },
             { title: "2. POLÍTICA DE PRIVACIDAD", icon: Shield, body: "Nos comprometemos a proteger sus datos personales y corporativos. Su información de contacto solo se usa para fines de soporte y mejora del servicio." },
             { title: "3. USO DE COOKIES", icon: Cookie, body: "Este sitio utiliza cookies para optimizar la experiencia de gestión de formularios y reportes. Al continuar navegando, usted acepta nuestra política." },
-            { title: "4. PROPIEDAD INTELECTUAL", icon: FileText, body: "Queda prohibida la reproducción total o parcial de logos, flujos, imágenes y software de Formapp sin autorización expresa." }
+            { title: "4. PROPIEDAD INTELECTUAL", icon: FileText, body: "Queda prohibida la reproducción total o parcial de logos, flujos, imágenes y software de DoSkills sin autorización expresa." }
         ]
     };
 
@@ -193,7 +193,7 @@ const TermsModal: React.FC<TermsModalProps> = ({ onClose, type = 'web' }) => {
                                     <img src={logo} alt="" className="h-10 opacity-30 grayscale" />
                                 </div>
                             </div>
-                            <p className="text-xs font-bold text-[#1f2937] tracking-wide">PLATAFORMA FORMAPP</p>
+                            <p className="text-xs font-bold text-[#1f2937] tracking-wide">PLATAFORMA DoSkills</p>
                             <p className="text-[10px] text-[#6b7280] mt-1 uppercase tracking-wider">Gestión Digital de Capacitaciones</p>
                             <p className="text-[10px] text-[#4f46e5] opacity-70 mt-4 font-mono">
                                 DOCUMENTO GENERADO AUTOMÁTICAMENTE | {new Date().getFullYear()}

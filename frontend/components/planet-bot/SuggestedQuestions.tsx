@@ -8,12 +8,12 @@ export interface QuestionItem {
 }
 
 export const QUESTIONS_DATA: QuestionItem[] = [
-    { question: "¿Qué es Formapp? 🤖", answer: "Formapp es la solución líder para digitalizar capacitaciones y formularios. Permitimos que las empresas eliminen el uso de papel y gestionen sus datos de manera inteligente y en tiempo real." },
-    { question: "¿Cómo digitalizo mis capacitaciones? 📱", answer: "¡Es muy fácil! Con Formapp puedes cargar tu contenido, crear evaluaciones interactivas y distribuir los formularios a tu equipo de inmediato desde el panel de administración." },
+    { question: "¿Qué es DoSkills? 🤖", answer: "DoSkills es la solución líder para digitalizar capacitaciones y formularios. Permitimos que las empresas eliminen el uso de papel y gestionen sus datos de manera inteligente y en tiempo real." },
+    { question: "¿Cómo digitalizo mis capacitaciones? 📱", answer: "¡Es muy fácil! Con DoSkills puedes cargar tu contenido, crear evaluaciones interactivas y distribuir los formularios a tu equipo de inmediato desde el panel de administración." },
     { question: "¿Cuáles son los beneficios? 🚀", answer: "Los principales beneficios son: ahorro de costos logísticos, reducción del impacto ambiental (Cero Papel), reportes automatizados y mayor tasa de finalización de capacitaciones." },
-    { question: "¿Es seguro usar Formapp? 🔒", answer: "Totalmente. Contamos con protocolos de seguridad bancaria y almacenamiento en la nube encriptado para asegurar que toda la información académica y corporativa esté protegida." },
-    { question: "¿Cómo obtengo reportes? 📊", answer: "Formapp genera dashboards automáticos. Podrás ver quién completó la capacitación, los puntajes obtenidos y exportar todo a Excel o PDF con un solo clic." },
-    { question: "¿Funciona en celulares? 🤳", answer: "Sí, Formapp es 100% responsive. Tus colaboradores pueden acceder desde cualquier smartphone, tablet o computadora sin necesidad de instalar aplicaciones pesadas." },
+    { question: "¿Es seguro usar DoSkills? 🔒", answer: "Totalmente. Contamos con protocolos de seguridad bancaria y almacenamiento en la nube encriptado para asegurar que toda la información académica y corporativa esté protegida." },
+    { question: "¿Cómo obtengo reportes? 📊", answer: "DoSkills genera dashboards automáticos. Podrás ver quién completó la capacitación, los puntajes obtenidos y exportar todo a Excel o PDF con un solo clic." },
+    { question: "¿Funciona en celulares? 🤳", answer: "Sí, DoSkills es 100% responsive. Tus colaboradores pueden acceder desde cualquier smartphone, tablet o computadora sin necesidad de instalar aplicaciones pesadas." },
     { question: "¿Qué soporte ofrecen? 🛠️", answer: "Ofrecemos soporte técnico 24/7 para planes corporativos, además de guías interactivas y asesoría personalizada para la migración de tus procesos físicos a digitales." }
 ];
 

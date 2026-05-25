@@ -3,7 +3,7 @@ const ExcelJS = require("exceljs");
 class ExcelService {
   async generateTrainingReport(capacitaciones, empresa) {
     const workbook = new ExcelJS.Workbook();
-    workbook.creator = "Sistema SST Formapp";
+    workbook.creator = "Sistema SST DoSkils";
     workbook.created = new Date();
 
     // 1. DESCARGA DEL LOGO DE LA EMPRESA (Cabecera)

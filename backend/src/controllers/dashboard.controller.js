@@ -127,7 +127,9 @@ const getRecent = async (req, res) => {
     });
 
     const data = recientes.map((cap) => {
-      const unicos = new Set(cap.participantes.map((p) => p.dni)).size;
+      const unicos = new Set(
+        cap.participantes.filter((p) => p.dni).map((p) => p.dni),
+      ).size;
       return {
         id_capacitacion: cap.id_capacitacion,
         fecha: cap.fecha,
